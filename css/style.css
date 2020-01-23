@@ -1,0 +1,160 @@
+
+:root {
+
+    --orange: #edbd1b;
+
+    --green: #5ab846;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .bg-color-dark {
+      background-color: #111111;
+    }
+
+    .nav-icon {
+      padding-top: 0rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      width: auto;
+      text-align: center;
+      color: #c0c0c0;
+      transition-duration: 500ms;
+      transform-origin: 50% 50%;
+    }
+
+    .nav-icon:hover {
+      color: #5ab846;
+      cursor: pointer;
+      transition-duration: 500ms;
+    }
+
+    .selected {
+      color: #edbd1b;
+      transition-duration: 500ms;
+    }
+
+    .selected:hover {
+      color: #edbd1b;
+      transition-duration: 500ms;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+  .bg-color-dark {
+    background-color: rbga(1,1,1,0);
+  }
+
+  .nav-icon {
+    padding-top: 44px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-image: url(../images/others/bulbunlit.png);
+    background-repeat: no-repeat;
+    background-size: auto 44px;
+    background-position: top;
+    width: 7rem;
+    text-align: center;
+    color: #c0c0c0;
+    transition-duration: 500ms;
+    transform-origin: 50% 0%;
+  }
+
+  .nav-icon:hover {
+    background-image: url(../images/others/bulbhighlight.png);
+    color: #5ab846;
+    cursor: pointer;
+    transition-duration: 500ms;
+  }
+
+  .selected {
+    background-image: url(../images/others/bulblit.png);
+    color: #edbd1b;
+    transition-duration: 500ms;
+  }
+
+  .selected:hover {
+    background-image: url(../images/others/bulblit.png);
+    color: #edbd1b;
+    transition-duration: 500ms;
+  }
+}
+
+  .color-orange {
+    color: #edbd1b;
+  }
+
+  .color-green {
+    color: #5ab846;
+  }
+
+  .color-grey-light {
+    color: #c0c0c0;
+  }
+
+  .color-grey-dark {
+    color: #808080;
+  }
+
+  .header-bg {
+      background-image: url("../images/others/header-bg.png");
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.5);
+      background-repeat: no-repeat;
+      height: 100vh;
+  }
+
+  .footer-container {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+  }
+
+  .footer-icon {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #c0c0c0;
+    transition-duration: 500ms;
+  }
+
+  .footer-icon:hover {
+    color: #5ab846;
+    transition-duration: 500ms;
+  }
+
+  .footer-logo {
+    height: 50px;
+    width: auto;
+    margin: 1rem;
+    animation-iteration-count: 1;
+    transition-duration: 500ms;
+  }
+
+  .footer-logo:hover {
+    animation-iteration-count: infinite;
+    transition-duration: 500ms;
+  }
+
+    .padding-top-zero {
+      padding-top: 0rem;
+    }
+
+    .padding-bot-zero {
+      padding-bottom: 0rem;
+    }
+
+    .margin-top-zero {
+      margin-top: 0rem;
+    }
+
+    .margin-bot-zero {
+      margin-bottom: 0rem;
+    }
+
+    .margin-top-half {
+      margin-top: 0.5rem;
+    }
