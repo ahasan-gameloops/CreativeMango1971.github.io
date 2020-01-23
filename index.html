@@ -1,12 +1,93 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Example of resposive landing page</title>
-	<meta charset="utf-8">
+  <title>Creative Mango</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
-<body>
-  
-     <p>Success</p>
+
+<body class="header-bg">
+
+<!--navigation-->
+  <nav class="navbar navbar-dark navbar-expand-md padding-top-zero">
+    <button class="navbar-toggler margin-top-half" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon color-green"></span>
+    </button>
+    <div class="collapse bg-color-dark navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <p class="nav-item">
+          <p id="nav-btn-1" class="nav-icon" href="#">Home</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-2" class="nav-icon" href="#">Games</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-3" class="nav-icon" href="#">Audio-Visual</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-4" class="nav-icon" href="#">Design</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-5" class="nav-icon" href="#">Who We Are</p>
+        </p>
+      </ul>
+    </div>
+  </nav>
+<!--navigation-->
+
+<!--footer-->
+<div class="footer-container">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-4">
+        <span><i class="fab fa-facebook fa-2x footer-icon"></i><i class="fab fa-facebook fa-2x footer-icon"></i><i class="fab fa-facebook fa-2x footer-icon"></i></span>
+        <p class="margin-bot-zero color-grey-dark">text line 1</p>
+        <p class="margin-bot-zero color-grey-dark">text line 2</p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <p class="margin-bot-zero color-grey-dark">By<img class="footer-logo animated pulse fast" src="images/others/logo.png" alt="x"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--footer-->
 
 </body>
+
+
+<script type="text/javascript">
+
+refreshNavItems();
+setNavItems();
+$("#nav-btn-1").addClass("selected animated swing faster");
+
+  function setNavItems() {
+    for (var i=1; i < 6; i++) {
+      var elementId = "#nav-btn-"+i;
+      $(elementId).click(function(){
+        refreshNavItems();
+        $(this).addClass("selected animated swing faster");
+      });
+    }
+  }
+
+  function refreshNavItems() {
+    for (var i=1; i < 6; i++) {
+      var elementId = "#nav-btn-"+i;
+      $(elementId).removeClass("selected animated swing faster");
+    }
+  }
+
+</script>
+
 </html>
