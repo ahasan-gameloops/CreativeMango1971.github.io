@@ -7,7 +7,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .bg-color-dark {
       background-color: #111111;
@@ -41,7 +41,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
   .bg-color-dark {
     background-color: rbga(1,1,1,0);
@@ -82,6 +82,33 @@
   }
 }
 
+
+
+
+.header-text {
+  font-size: 3rem;
+  color: #c0c0c0;
+}
+
+.header-text-big {
+  font-size: 8rem;
+  font-weight: bolder;
+  color: #edbd1b;
+}
+
+.hover-green:hover {
+  color: #5ab846;
+  transition-duration: 500ms;
+}
+
+.hover-orange:hover {
+  color: #edbd1b;
+  transition-duration: 500ms;
+}
+
+
+
+
   .color-orange {
     color: #edbd1b;
   }
@@ -119,11 +146,7 @@
     margin-bottom: 0.5rem;
     color: #c0c0c0;
     transition-duration: 500ms;
-  }
-
-  .footer-icon:hover {
-    color: #5ab846;
-    transition-duration: 500ms;
+    cursor: pointer;
   }
 
   .footer-logo {
