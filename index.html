@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Creative Mango - Games</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+</head>
+
+<body class="header-bg">
+
+  <!--navigation-->
+  <nav class="navbar navbar-fixed-top navbar-dark navbar-expand-md padding-top-zero">
+    <button class="navbar-toggler margin-top-half" type="button" data-toggle="collapse"
+      data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon color-green"></span>
+    </button>
+    <div class="collapse bg-color-dark navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <p class="nav-item">
+          <p id="nav-btn-1" class="nav-icon">Home</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-2" class="nav-icon">Games</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-3" class="nav-icon">Audio-Visual</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-4" class="nav-icon">Design</p>
+        </p>
+        <p class="nav-item">
+          <p id="nav-btn-5" class="nav-icon">Who We Are</p>
+        </p>
+      </ul>
+    </div>
+  </nav>
+  <!--navigation-->
+
+  <!--Main Viewport Container-->
+  <div class="container" id="main-viewport">
+
+  </div>
+
+
+  <!--footer-->
+  <div class="footer-container">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-4">
+          <span><i class="fab fa-facebook fa-2x footer-icon hover-green"></i><i
+              class="fab fa-facebook fa-2x footer-icon  hover-green"></i><i
+              class="fab fa-facebook fa-2x footer-icon  hover-green"></i></span>
+          <br>
+          <a class="margin-bot-zero color-grey-dark hover-orange" href="#">Terms & Policy</a>
+          <p class="margin-bot-zero color-grey-dark">&copy 2019 Creative Mango</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <p class="margin-bot-zero color-grey-dark">By<img class="footer-logo animated pulse fast"
+              src="images/others/logo.png" alt="x"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+
+</body>
+
+
+<script>
+
+  $(document).ready(function () {
+
+    $("#main-viewport").load("blocks/home.html");
+    refreshNavItems();
+    $("#nav-btn-1").addClass("selected animated swing faster");
+
+    $("#nav-btn-1").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      var blocklink = "blocks/home.html";
+      $("#main-viewport").load(blocklink);
+    });
+
+    $("#nav-btn-2").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      var blocklink = "blocks/games.html";
+      $("#main-viewport").load(blocklink);
+    });
+
+    $("#nav-btn-3").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      var blocklink = "blocks/home.html";
+      $("#main-viewport").load(blocklink);
+    });
+
+    $("#nav-btn-4").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      var blocklink = "blocks/home.html";
+      $("#main-viewport").load(blocklink);
+    });
+
+    $("#nav-btn-5").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      var blocklink = "blocks/home.html";
+      $("#main-viewport").load(blocklink);
+    });
+
+  });
+
+  function refreshNavItems() {
+    for (var i = 1; i < 6; i++) {
+      var elementId = "#nav-btn-" + i;
+      $(elementId).removeClass("selected animated swing faster");
+    }
+  }
+
+</script>
+
+</html>
