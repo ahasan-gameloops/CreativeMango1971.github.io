@@ -1,0 +1,180 @@
+<div class="row align-items-center animated fadeIn">
+
+    <div class="col-md-12">
+
+        <div class="swiper-container gallery-top" style="padding-bottom: 5rem; padding-top: 5rem;">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f1.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f2.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f3.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f4.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f5.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f6.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f7.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f8.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f9.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/games/f10.png" alt="blocked icon">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i1.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i2.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i3.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i4.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i5.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i6.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i7.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i8.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i9.png" alt="blocked icon">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="images/games/i10.png" alt="blocked icon">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+
+</div>
+
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 25,
+        slidesPerView: 5,
+        loop: true,
+        freeMode: true,
+        loopedSlides: 5, //looped slides should be the same
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 0,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+        effect: 'fade',
+        centeredSlides: true,
+        noSwiping: true,
+        noSwipingClass: 'no-swipe',
+        fadeEffect: {
+            crossFade: true
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
