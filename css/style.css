@@ -7,6 +7,16 @@
 
 }
 
+@font-face {
+  font-family: "SteelfishOutlined";
+  src: url("../webfonts/steelfishoutline.ttf");
+}
+
+@font-face {
+  font-family: "SteelfishRegular";
+  src: url("../webfonts/steelfishregular.ttf");
+}
+
 @media screen and (max-width: 767px) {
 
     .bg-color-dark {
@@ -83,17 +93,20 @@
 }
 
 
-
+p {
+  font-family: "SteelfishRegular";
+}
 
 .header-text {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #c0c0c0;
+  font-family: "SteelfishRegular";
 }
 
 .header-text-big {
   font-size: 8rem;
-  font-weight: bolder;
   color: #edbd1b;
+  font-family: "SteelfishOutlined";
 }
 
 .hover-green:hover {
