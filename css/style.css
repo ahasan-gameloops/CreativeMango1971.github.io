@@ -93,20 +93,24 @@
 }
 
 
-p {
+.font-regular {
   font-family: "SteelfishRegular";
 }
 
-.header-text {
-  font-size: 4rem;
-  color: #c0c0c0;
-  font-family: "SteelfishRegular";
-}
-
-.header-text-big {
-  font-size: 8rem;
-  color: #edbd1b;
+.font-outline {
   font-family: "SteelfishOutlined";
+}
+
+.text-small {
+  font-size: 2rem;
+}
+
+.text-mid {
+  font-size: 4rem;
+}
+
+.text-big {
+  font-size: 8rem;
 }
 
 .hover-green:hover {
@@ -119,78 +123,75 @@ p {
   transition-duration: 500ms;
 }
 
+.color-orange {
+  color: #edbd1b;
+}
 
+.color-green {
+  color: #5ab846;
+}
 
+.color-grey-light {
+  color: #c0c0c0;
+}
 
-  .color-orange {
-    color: #edbd1b;
-  }
+.color-grey-dark {
+  color: #808080;
+}
 
-  .color-green {
-    color: #5ab846;
-  }
+.header-bg {
+    background-image: url("../images/others/header-bg.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
-  .color-grey-light {
-    color: #c0c0c0;
-  }
+.footer-container {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
 
-  .color-grey-dark {
-    color: #808080;
-  }
+.footer-icon {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #c0c0c0;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
 
-  .header-bg {
-      background-image: url("../images/others/header-bg.png");
-      background-size: cover;
-      background-position: center;
-      box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.5);
-      background-repeat: no-repeat;
-      height: 100vh;
-  }
+.footer-logo {
+  height: 50px;
+  width: auto;
+  margin: 1rem;
+  animation-iteration-count: 1;
+  transition-duration: 500ms;
+}
 
-  .footer-container {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    bottom: 0;
-  }
+.footer-logo:hover {
+  animation-iteration-count: infinite;
+  transition-duration: 500ms;
+}
 
-  .footer-icon {
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: #c0c0c0;
-    transition-duration: 500ms;
-    cursor: pointer;
-  }
+.padding-top-zero {
+  padding-top: 0rem;
+}
 
-  .footer-logo {
-    height: 50px;
-    width: auto;
-    margin: 1rem;
-    animation-iteration-count: 1;
-    transition-duration: 500ms;
-  }
+.padding-bot-zero {
+  padding-bottom: 0rem;
+}
 
-  .footer-logo:hover {
-    animation-iteration-count: infinite;
-    transition-duration: 500ms;
-  }
+.margin-top-zero {
+  margin-top: 0rem;
+}
 
-    .padding-top-zero {
-      padding-top: 0rem;
-    }
+.margin-bot-zero {
+  margin-bottom: 0rem;
+}
 
-    .padding-bot-zero {
-      padding-bottom: 0rem;
-    }
-
-    .margin-top-zero {
-      margin-top: 0rem;
-    }
-
-    .margin-bot-zero {
-      margin-bottom: 0rem;
-    }
-
-    .margin-top-half {
-      margin-top: 0.5rem;
-    }
+.margin-top-half {
+  margin-top: 0.5rem;
+}
