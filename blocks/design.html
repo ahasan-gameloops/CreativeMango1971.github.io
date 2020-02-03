@@ -1,0 +1,130 @@
+<div class="row align-items-center animated fadeIn">
+
+    <div class="col-md-12 text-right">
+        <div class="swiper-container designs-slide">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/designs/designs1.png">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Graphic Design</p>
+                            <p>Details details details detaild detaild</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/designs/designs2.png">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Graphic Design</p>
+                            <p>Details details details detaild detaild</p>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/designs/designs3.png">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Graphic Design</p>
+                            <p>Details details details detaild detaild</p>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+
+        <div class="swiper-container web-slide">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide no-swipe">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>Graphic Design</p>
+                            <p>Details details details detaild detaild</p>                            
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/designs/web1.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide no-swipe">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>Graphic Design</p>
+                            <p>Details details details detaild detaild</p>                            
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/designs/web2.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide no-swipe">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>Graphic Design</p>
+                            <p>Details details details detaild detaild</p>                            
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="images/designs/web2.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    var designsswiper = new Swiper('.designs-slide', {
+        effect: 'fade',
+        centeredSlides: true,
+        noSwiping: true,
+        noSwipingClass: 'no-swipe',
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+            waitForTransition: false,
+        },
+    });
+
+    var webswiper = new Swiper('.web-slide', {
+        effect: 'fade',
+        centeredSlides: true,
+        noSwiping: true,
+        noSwipingClass: 'no-swipe',
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+            waitForTransition: false,
+        },
+    });
+    
+</script>

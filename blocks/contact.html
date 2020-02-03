@@ -1,0 +1,73 @@
+<!-- Contact -->
+<div class="row animated fadeIn">
+    <div class="col-md-12" style="padding-bottom: 3rem;">
+        <p class="font-heinberg text-mid color-orange text-center">CONTACT</p>
+        <ul class="list-unstyled li-space-lg text-center">
+            <li class="font-regular color-grey-light text-small">Don't hesitate to send us an email or just use the contact form below</li>
+            <li class="font-regular color-grey-light text-small"><i class="fas fa-map-marker-alt"></i> Holan, Dhaka 1230, Bangladesh</li>            
+            <li class="font-regular color-grey-light text-small"><i class="fas fa-envelope"></i><a class="color-grey-light hover-green" href="mailto:creativemango1971@gmail.com"> creativemango1971@gmail.com</a></li>
+        </ul>
+    </div> 
+
+    <div class="col-md-6">
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.0820532093417!2d90.43198341536392!3d23.851219890833484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6a9a78f813%3A0xa8530be38e11d891!2sCreative%20Mango!5e0!3m2!1sen!2sbd!4v1579689914321!5m2!1sen!2sbd"
+                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <form id="contact-form">
+            <div class=" form-group">
+                <input id="form-name" name="name" type="text" class="form-control" placeholder="Name" required
+                    style="margin-bottom: 10px !important">
+            </div>
+            <div class=" form-group">
+                <input id="form-email" name="email" type="email" class="form-control" placeholder="Email" required
+                    style="margin-bottom: 10px !important">
+            </div>
+            <div class=" form-group">
+                <input id="form-subject" name="subject" type="text" class="form-control" placeholder="Subject" required
+                    style="margin-bottom: 10px !important">
+            </div>
+            <div class=" form-group">
+                <textarea id="form-message" name="message" rows="5" class="form-control" placeholder="Message" required
+                    style="margin-bottom: 10px !important"></textarea>
+            </div>
+            <div class="text-center"><button id="submit-form" class="btn btn-primary" type="submit">Send</button></div>
+        </form>
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#contact-form").submit(function(event){
+            event.preventDefault();
+            var subject = 'Email from ' + $("#form-name").val() + ' (' + $("#form-email").val() + ') about ' + $("#form-subject").val();
+            var message = $("#form-message").val();
+            var postData = 'subject='+subject+'&message='+message;
+            $.ajax({
+                type: "POST",
+                url: 'mail.php',
+                data: postData,
+                success: function(result) {
+                    if (result == "success") {
+                        alert("Message successfully sent.");
+                        $("#form-name").val(null);
+                        $("#form-email").val(null);
+                        $("#form-subject").val(null);
+                        $("#form-message").val(null);
+                    } else {
+                        alert("Message seding failed.");
+                    }
+                },
+            });
+        });
+    });
+</script>
