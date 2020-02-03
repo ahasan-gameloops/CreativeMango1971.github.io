@@ -8,16 +8,27 @@
 }
 
 @font-face {
-  font-family: "SteelfishOutlined";
-  src: url("../webfonts/steelfishoutline.ttf");
+  font-family: "Roboto";
+  src: url("../webfonts/Roboto.ttf");
 }
 
 @font-face {
-  font-family: "SteelfishRegular";
-  src: url("../webfonts/steelfishregular.ttf");
+  font-family: "Heinberg";
+  src: url("../webfonts/Heinberg.otf");
+}
+
+@font-face {
+  font-family: "BarleyScript";
+  src: url("../webfonts/BarleyScript.otf");
 }
 
 @media screen and (max-width: 767px) {
+  
+    .border-green {
+      border-style: solid;
+      border-color: #5ab846;
+      border-width: 1px;
+    }
 
     .bg-color-dark {
       background-color: #111111;
@@ -92,17 +103,41 @@
   }
 }
 
-
-.font-regular {
-  font-family: "SteelfishRegular";
+p {
+  font-family: "Roboto";
 }
 
-.font-outline {
-  font-family: "SteelfishOutlined";
+.nav-menu-icon {
+  height: 50px;
+  width: auto;
+  padding: 0px;
+  border-style: none !important;
+}
+
+.map-container {
+  width:100%;
+  height:100%;
+}
+
+.map-container iframe {
+  width:100%;
+  height:100%;
+}
+
+.font-roboto {
+  font-family: "Roboto";
+}
+
+.font-heinberg {
+  font-family: "Heinberg";
+}
+
+.font-barleyscript {
+  font-family: "BarleyScript";
 }
 
 .text-small {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .text-mid {
@@ -111,6 +146,42 @@
 
 .text-big {
   font-size: 8rem;
+}
+
+.border-white-1 {  
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 2px !important;
+}
+
+.glow-white-15 {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.thumb-icon {
+  cursor: pointer;
+  transition-duration: 500ms;
+  border-radius: 20px;
+}
+
+.thumb-icon:hover {
+  transition-duration: 500ms;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+}
+
+.hover-zoomcontent {
+  padding: 0.75rem;
+  transition-duration: 500ms;
+}
+
+.hover-zoomcontent:hover {
+  padding: 0.5rem;
+  transition-duration: 500ms;
 }
 
 .hover-green:hover {
@@ -166,7 +237,6 @@
 .footer-logo {
   height: 50px;
   width: auto;
-  margin: 1rem;
   animation-iteration-count: 1;
   transition-duration: 500ms;
 }
