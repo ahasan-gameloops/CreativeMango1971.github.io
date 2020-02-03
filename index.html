@@ -19,30 +19,30 @@
 <body class="header-bg">
 
   <!--navigation-->
-  <nav class="navbar navbar-fixed-top navbar-dark navbar-expand-md padding-top-zero">
-    <button class="navbar-toggler margin-top-half" type="button" data-toggle="collapse"
-      data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon color-green"></span>
-    </button>
-    <div class="collapse bg-color-dark navbar-collapse justify-content-center" id="collapsibleNavbar">
+  <nav class="navbar navbar-fixed-top navbar-dark navbar-expand-md padding-top-zero justify-content-center">
+    <div class="collapse bg-color-dark navbar-collapse justify-content-center border-green" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <p class="nav-item">
-          <p id="nav-btn-1" class="nav-icon font-regular text-small">Home</p>
+          <p id="nav-btn-1" class="nav-icon font-heinberg text-small">Home</p>
         </p>
         <p class="nav-item">
-          <p id="nav-btn-2" class="nav-icon font-regular text-small">Games</p>
+          <p id="nav-btn-2" class="nav-icon font-heinberg text-small">Games</p>
         </p>
         <p class="nav-item">
-          <p id="nav-btn-3" class="nav-icon font-regular text-small">Audio-Visual</p>
+          <p id="nav-btn-3" class="nav-icon font-heinberg text-small">Audio-Visual</p>
         </p>
         <p class="nav-item">
-          <p id="nav-btn-4" class="nav-icon font-regular text-small">Design</p>
+          <p id="nav-btn-4" class="nav-icon font-heinberg text-small">Design</p>
         </p>
         <p class="nav-item">
-          <p id="nav-btn-5" class="nav-icon font-regular text-small">Who We Are</p>
+          <p id="nav-btn-5" class="nav-icon font-heinberg text-small">Contact Us</p>
         </p>
       </ul>
     </div>
+    <button class="navbar-toggler nav-menu-icon" type="button" data-toggle="collapse"
+      data-target="#collapsibleNavbar">
+      <img id="nav-icon-mobile" src="images/others/bulblit.png" class="h-100" style="transform-origin: 50% 0%;">
+    </button>
   </nav>
   <!--navigation-->
 
@@ -57,18 +57,17 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-md-4">
+        <div class="col-md-4" style="padding-top: 2rem;">
           <span><i class="fab fa-facebook fa-2x footer-icon hover-green"></i><i
               class="fab fa-facebook fa-2x footer-icon  hover-green"></i><i
               class="fab fa-facebook fa-2x footer-icon  hover-green"></i></span>
           <br>
-          <a class="margin-bot-zero color-grey-dark hover-orange font-regular" href="#">Terms & Policy</a>
-          <p class="margin-bot-zero color-grey-dark font-regular">&copy 2019 Creative Mango</p>
+          <a class="margin-bot-zero color-grey-dark hover-orange font-roboto" href="#">Terms & Policy</a>
         </div>
 
-        <div class="col-md-4 text-center">
-          <p class="margin-bot-zero color-grey-dark">By<img class="footer-logo animated pulse fast"
-              src="images/others/logo.png" alt="x"></p>
+        <div class="col-md-4 text-center" style="padding-top: 1rem;">
+          <img class="footer-logo animated pulse fast" src="images/others/logo.png" alt="x">
+          <p class="margin-bot-zero color-grey-dark font-roboto">&copy 2020 Creative Mango</p>
         </div>
 
       </div>
@@ -86,12 +85,14 @@
     $("#main-viewport").load("blocks/home.html");
     refreshNavItems();
     $("#nav-btn-1").addClass("selected animated swing faster");
+    $("#nav-icon-mobile").addClass("animated swing");
 
     $("#nav-btn-1").click(function () {
       refreshNavItems();
       $(this).addClass("selected animated swing faster");
       var blocklink = "blocks/home.html";
       $("#main-viewport").load(blocklink);
+      toggleNavMenu();
     });
 
     $("#nav-btn-2").click(function () {
@@ -99,6 +100,7 @@
       $(this).addClass("selected animated swing faster");
       var blocklink = "blocks/games.html";
       $("#main-viewport").load(blocklink);
+      toggleNavMenu();
     });
 
     $("#nav-btn-3").click(function () {
@@ -106,20 +108,23 @@
       $(this).addClass("selected animated swing faster");
       var blocklink = "blocks/audiovisual.html";
       $("#main-viewport").load(blocklink);
+      toggleNavMenu();
     });
 
     $("#nav-btn-4").click(function () {
       refreshNavItems();
       $(this).addClass("selected animated swing faster");
-      var blocklink = "blocks/home.html";
+      var blocklink = "blocks/design.html";
       $("#main-viewport").load(blocklink);
+      toggleNavMenu();
     });
 
     $("#nav-btn-5").click(function () {
       refreshNavItems();
       $(this).addClass("selected animated swing faster");
-      var blocklink = "blocks/home.html";
+      var blocklink = "blocks/contact.html";
       $("#main-viewport").load(blocklink);
+      toggleNavMenu();
     });
 
   });
@@ -128,6 +133,14 @@
     for (var i = 1; i < 6; i++) {
       var elementId = "#nav-btn-" + i;
       $(elementId).removeClass("selected animated swing faster");
+    }
+  }
+
+  function toggleNavMenu() {
+    if ($(".navbar-collapse").hasClass("show")) {
+      $("#nav-icon-mobile").removeClass("animated swing");
+      $(".navbar-toggler").click();
+      $("#nav-icon-mobile").addClass("animated swing");
     }
   }
 
