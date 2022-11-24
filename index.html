@@ -2,17 +2,576 @@
 <html lang="en">
 
 <head>
-  <title>Creative Mango</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Creativity forms the backbone of everything we do at Creative Mango. Inventing creative solutions to even the most random tasks is what makes us special. We believe in our creative insights and abilities to deliver our client creative ideas and content that speaks and connects with their target audiences.">
+  <meta name="author" content="Creative Mango">
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="Creative Mango" /> <!-- website name -->
+  <meta property="og:site" content="http://creative.mango-int.com" /> <!-- website link -->
+  <meta property="og:title" content="Creative Mango" /> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="Creativity forms the backbone of everything we do at Creative Mango." />
+  <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="http://creative.mango-int.com/images/others/feature.jpg" />
+  <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="http://creative.mango-int.com" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="website" />
+
+  <!-- Website Title -->
+  <title>Creative Mango</title>
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+
+  <link rel="icon" href="images/others/favicon.png">
 </head>
 
-<body>
+<body class="body-bg min-vh-100">
+
+  <!-- FB chat plugin -->
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v6.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="2035722510007534" theme_color="#5ab846">
+  </div>
+
+  <!-- FB chat plugin -->
+
+  <!--navigation-->
+  <nav class="navbar fixed-top navbar-dark navbar-expand-md justify-content-center nav-bg nav-padding">
+    <div class="collapse bg-color-dark navbar-collapse justify-content-center border-green" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <p class="nav-item">
+        <p id="nav-btn-1" class="nav-icon no-select">Home</p>
+        </p>
+        <p class="nav-item">
+        <p id="nav-btn-2" class="nav-icon no-select">Games</p>
+        </p>
+        <p class="nav-item">
+        <p id="nav-btn-3" class="nav-icon no-select">Audio-Visual</p>
+        </p>
+        <p class="nav-item">
+        <p id="nav-btn-4" class="nav-icon no-select">Design</p>
+        </p>
+        <p class="nav-item">
+        <p id="nav-btn-5" class="nav-icon no-select">Contact Us</p>
+        </p>
+      </ul>
+    </div>
+    <button class="navbar-toggler nav-menu-icon" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <img id="nav-icon-mobile" src="images/others/bulblit.png" class="h-50" style="transform-origin: 50% 0%;">
+      <p class="nav-icon selected">Menu</p>
+    </button>
+  </nav>
+  <!--navigation-->
+
+  <!--Main Viewport Container-->
+  <div class="container" id="main-viewport">
+    <div class="row align-items-center animated fadeIn main-container">
+
+      <div class="col-md-12">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 text-center">
+            <!--<br><span id="js-rotating" class="header-text-big">Designs,Games,Dreams</span>-->
+            <p class="home-subtitle">Seeding Sweetness in</p>
+            <div class="swiper-container" id="header-text-slide">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper w-100">
+
+                <div class="swiper-slide no-swipe w-100">
+                  <img class="img-fluid home-title" src="images/others/designs.png">
+                </div>
+
+                <div class="swiper-slide no-swipe w-100">
+                  <img class="img-fluid home-title" src="images/others/games.png">
+                </div>
+
+                <div class="swiper-slide no-swipe w-100">
+                  <img class="img-fluid home-title" src="images/others/dreams.png">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center">
+
+            <div class="swiper-container" id="header-image-slide">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/designs0.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/designs1.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/designs2.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/designs3.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/designs4.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/games0.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/games1.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/games2.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/games3.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/games4.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/dreams0.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/dreams1.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/dreams2.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/dreams3.png">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide no-swipe">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="img-fluid" src="images/slides/dreams4.png">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+
+      var imageswiper = new Swiper('#header-image-slide', {
+        effect: 'fade',
+        centeredSlides: true,
+        noSwiping: true,
+        noSwipingClass: 'no-swipe',
+        fadeEffect: {
+          crossFade: true
+        },
+        autoplay: {
+          delay: 1000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          waitForTransition: false,
+        },
+      });
+
+      var textswiper = new Swiper('#header-text-slide', {
+        effect: 'fade',
+        centeredSlides: true,
+        noSwiping: true,
+        noSwipingClass: 'no-swipe',
+        fadeEffect: {
+          crossFade: true
+        },
+        autoplay: {
+          delay: 5000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          waitForTransition: false,
+        },
+      });
+
+    </script>
+  </div>
+  <!--Main Viewport Container-->
+
+  <!--footer-->
+  <div class="footer-container">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-4 footer-social d-none d-md-block">
+          <span>
+            <a href="https://www.facebook.com/creativemangoworks/" target="_blank" class="footer-social-icon">
+              <img src="images/others/fbicon.png" class="footer-icon img-fluid">
+            </a>
+            <a href="https://twitter.com/CreativeMango2/" target="_blank" class="footer-social-icon">
+              <img src="images/others/twittericon.png" class="footer-icon img-fluid">
+            </a>
+            <a href="https://www.linkedin.com/company/creativemango/" target="_blank" class="footer-social-icon">
+              <img src="images/others/linkedinicon.png" class="footer-icon img-fluid">
+            </a>
+            <a href="https://www.instagram.com/creativemangobd/" target="_blank" class="footer-social-icon">
+              <img src="images/others/instagramicon.png" class="footer-icon img-fluid">
+            </a>
+          </span>
+          <br>
+          <a class="margin-bot-zero color-grey-dark hover-orange terms-link" href="#" data-toggle="modal"
+            data-target="#terms-policy" style="padding-left: 15px;">Terms & Privacy Policy</a>
+        </div>
+
+        <div class="col-md-4 text-center footer-brand">
+          <img class="footer-logo animated pulse fast" src="images/others/logo.png" alt="x">
+
+          <div class="text-center footer-social d-md-none">
+            <span>
+              <a href="https://www.facebook.com/creativemangoworks/" target="_blank" class="footer-social-icon">
+                <img src="images/others/fbicon.png" class="footer-icon img-fluid">
+              </a>
+              <a href="https://twitter.com/CreativeMango2/" target="_blank" class="footer-social-icon">
+                <img src="images/others/twittericon.png" class="footer-icon img-fluid">
+              </a>
+              <a href="https://www.linkedin.com/company/creativemango/" target="_blank" class="footer-social-icon">
+                <img src="images/others/linkedinicon.png" class="footer-icon img-fluid">
+              </a>
+              <a href="https://www.instagram.com/creativemangobd/" target="_blank" class="footer-social-icon">
+                <img src="images/others/instagramicon.png" class="footer-icon img-fluid">
+              </a>
+            </span>
+            <br>
+            <a class="margin-bot-zero color-grey-dark hover-orange terms-link" href="#" data-toggle="modal"
+              data-target="#terms-policy">Terms & Privacy Policy</a>
+          </div>
+
+          <p class="margin-bot-zero color-grey-dark">&copy 2020 Creative Mango</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+
+  <!-- Terms and Policy -->
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-12">
+        <div class="modal fade" id="terms-policy">
+          <div class="modal-dialog modal-xl">
+            <div class="popup-bg">
+
+              <!-- Modal Header -->
+              <div class="text-center">
+                <p class="common-subtitle text-center">Terms</p>
+              </div>
+
+              <div>
+                <h3>1. Terms</h3>
+                <p>By accessing the website at <span class="color-green">http://creative.mango-int.com</span>,
+                  you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree
+                  that you are responsible for compliance with any applicable local laws. If you do not agree with any
+                  of
+                  these terms, you are prohibited from using or accessing this site. The materials contained in this
+                  website
+                  are protected by applicable copyright and trademark law.</p>
+                <h3>2. Use License</h3>
+                <ol type="a">
+                  <li>Permission is granted to temporarily download one copy of the materials (information or software)
+                    on
+                    Creative Mango's website for personal, non-commercial transitory viewing only. This is the grant of
+                    a
+                    license, not a transfer of title, and under this license you may not:
+                    <ol type="i">
+                      <li>modify or copy the materials;</li>
+                      <li>use the materials for any commercial purpose, or for any public display (commercial or
+                        non-commercial);</li>
+                      <li>attempt to decompile or reverse engineer any software contained on Creative Mango's website;
+                      </li>
+                      <li>remove any copyright or other proprietary notations from the materials; or</li>
+                      <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+                    </ol>
+                  </li>
+                  <li>This license shall automatically terminate if you violate any of these restrictions and may be
+                    terminated by Creative Mango at any time. Upon terminating your viewing of these materials or upon
+                    the
+                    termination of this license, you must destroy any downloaded materials in your possession whether in
+                    electronic or printed format.</li>
+                </ol>
+                <h3>3. Disclaimer</h3>
+                <ol type="a">
+                  <li>The materials on Creative Mango's website are provided on an 'as is' basis. Creative Mango makes
+                    no
+                    warranties, expressed or implied, and hereby disclaims and negates all other warranties including,
+                    without limitation, implied warranties or conditions of merchantability, fitness for a particular
+                    purpose, or non-infringement of intellectual property or other violation of rights.</li>
+                  <li>Further, Creative Mango does not warrant or make any representations concerning the accuracy,
+                    likely
+                    results, or reliability of the use of the materials on its website or otherwise relating to such
+                    materials or on any sites linked to this site.</li>
+                </ol>
+                <h3>4. Limitations</h3>
+                <p>In no event shall Creative Mango or its suppliers be liable for any damages (including, without
+                  limitation, damages for loss of data or profit, or due to business interruption) arising out of the
+                  use or
+                  inability to use the materials on Creative Mango's website, even if Creative Mango or a Creative Mango
+                  authorized representative has been notified orally or in writing of the possibility of such damage.
+                  Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability
+                  for
+                  consequential or incidental damages, these limitations may not apply to you.</p>
+                <h3>5. Accuracy of materials</h3>
+                <p>The materials appearing on Creative Mango's website could include technical, typographical, or
+                  photographic errors. Creative Mango does not warrant that any of the materials on its website are
+                  accurate, complete or current. Creative Mango may make changes to the materials contained on its
+                  website
+                  at any time without notice. However Creative Mango does not make any commitment to update the
+                  materials.
+                </p>
+                <h3>6. Links</h3>
+                <p>Creative Mango has not reviewed all of the sites linked to its website and is not responsible for the
+                  contents of any such linked site. The inclusion of any link does not imply endorsement by Creative
+                  Mango
+                  of the site. Use of any such linked website is at the user's own risk.</p>
+                <h3>7. Modifications</h3>
+                <p>Creative Mango may revise these terms of service for its website at any time without notice. By using
+                  this website you are agreeing to be bound by the then current version of these terms of service.</p>
+                <h3>8. Governing Law</h3>
+                <p>These terms and conditions are governed by and construed in accordance with the laws of Dhaka,
+                  Bangladesh
+                  and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+              </div>
+
+              <!-- Modal Header -->
+              <div class="text-center">
+                <p class="common-subtitle text-center">Privacy Policy</p>
+              </div>
+
+              <!-- Modal body -->
+              <div>
+                <p>Your privacy is important to us. It is Creative Mango's policy to respect your privacy regarding any
+                  information we may collect from you across our website, <span class="color-green">
+                    http://creative.mango-int.com</span>, and other sites we own and
+                  operate.</p>
+                <p>We only ask for personal information when we truly need it to provide a service to you. We collect it
+                  by
+                  fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it
+                  and
+                  how it will be used.</p>
+                <p>We only retain collected information for as long as necessary to provide you with your requested
+                  service.
+                  What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as
+                  well
+                  as unauthorized access, disclosure, copying, use or modification.</p>
+                <p>We don’t share any personally identifying information publicly or with third-parties, except when
+                  required to by law.</p>
+                <p>Our website may link to external sites that are not operated by us. Please be aware that we have no
+                  control over the content and practices of these sites, and cannot accept responsibility or liability
+                  for
+                  their respective privacy policies.</p>
+                <p>You are free to refuse our request for your personal information, with the understanding that we may
+                  be
+                  unable to provide you with some of your desired services.</p>
+                <p>The website does use third party services (Facebook) that may collect information used to identify
+                  you.<br>Link to
+                  privacy policy of third party service providers used by the website</p>
+                <p>Facebook Privacy Policy at - <span
+                    class="color-green">"https://www.facebook.com/about/privacy"</span>
+                </p>
+                <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and
+                  personal information. If you have any questions about how we handle user data and personal
+                  information,
+                  feel free to contact us.</p>
+                <p>This policy is effective as of 1 January 2020.</p>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="text-center">
+                <button type="button" class="btn btn-danger font-heinberg" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms and Policy -->
 
 </body>
 
-<script type="text/javascript">
-    window.location = "https://creative.mango-int.com";
+
+<script>
+
+  $(document).ready(function () {
+
+    refreshNavItems();
+    $("#nav-btn-1").addClass("selected animated swing faster");
+    $("#nav-icon-mobile").addClass("animated swing");
+
+    $("#nav-btn-1").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      window.location.href = "index.html";
+      toggleNavMenu();
+    });
+
+    $("#nav-btn-2").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      window.location.href = "games.html";
+      toggleNavMenu();
+    });
+
+    $("#nav-btn-3").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      window.location.href = "audiovisual.html";
+      toggleNavMenu();
+    });
+
+    $("#nav-btn-4").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      window.location.href = "design.html";
+      toggleNavMenu();
+    });
+
+    $("#nav-btn-5").click(function () {
+      refreshNavItems();
+      $(this).addClass("selected animated swing faster");
+      window.location.href = "contact.html";
+      toggleNavMenu();
+    });
+
+    $(".footer-social-icon").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+
+    $(".terms-link").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+
+  });
+
+  function refreshNavItems() {
+    for (var i = 1; i < 6; i++) {
+      var elementId = "#nav-btn-" + i;
+      $(elementId).removeClass("selected animated swing faster");
+    }
+  }
+
+  function toggleNavMenu() {
+    if ($(".navbar-collapse").hasClass("show")) {
+      $("#nav-icon-mobile").removeClass("animated swing");
+      $(".navbar-toggler").click();
+      $("#nav-icon-mobile").addClass("animated swing");
+    }
+  }
+
 </script>
 
 </html>
